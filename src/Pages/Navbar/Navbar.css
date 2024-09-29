@@ -43,7 +43,7 @@ Variables
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
   --fixed-width: 620px;
-  --proj-lightgray: #151b1d;
+  --proj-black: #151b1d;
   --proj-white: #fff;
   --proj-accent-blue: #2a363b;
   --proj-sky-blue: #37b5fe;
@@ -300,7 +300,7 @@ Submenu
     position: fixed;
     top: 4rem;
     width: 650px;
-    background-color: var(--proj-lightgray);
+    background-color: var(--proj-black);
     left: 54%;
     padding: 2rem;
     transform: rotateX(-90deg) translateX(-50%);
