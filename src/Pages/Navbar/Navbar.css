@@ -43,9 +43,10 @@ Variables
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
   --fixed-width: 620px;
-  --proj-lightgray: rgb(149, 146, 146);
+  --proj-lightgray: #151b1d;
   --proj-white: #fff;
-  --proj-gold: #ffca6c;
+  --proj-accent-blue: #2a363b;
+  --proj-sky-blue: #37b5fe;
 }
 /*
 =============== 
@@ -143,7 +144,7 @@ Navbar
 ===============
 */
 nav {
-  background: rgb(66, 66, 66);
+  background: var(--proj-accent-blue);
   box-shadow: var(--light-shadow);
 }
 .nav-header {
@@ -163,7 +164,7 @@ nav {
   top: 2.2rem;
 }
 .nav-toggle:hover {
-  color: var(--proj-gold);
+  color: var(--proj-sky-blue);
   transform: rotate(90deg);
   cursor: pointer;
 }
@@ -183,7 +184,7 @@ nav {
 }
 .links a:hover {
   background: var(--proj-white);
-  color: var(--proj-gold);
+  color: var(--proj-sky-blue);
   padding-left: 1.5rem;
   text-decoration: underline;
 }
@@ -204,14 +205,14 @@ nav {
 }
 .social-icons a {
   margin: 0 0.45rem;
-  color: var(--proj-gold);
+  color: var(--proj-sky-blue);
   transition: var(--transition);
   font-size: 1.5rem;
 }
 .social-icons a:hover {
   color: var(--proj-white);
 }
-@media screen and (min-width: 1026px) {
+@media screen and (min-width: 1155px) {
   .social-icons {
     right: 1rem;
     top: 2.2rem;
@@ -234,7 +235,8 @@ nav {
     height: auto !important;
     width: 62vw;
     display: flex;
-    translate: -5%;
+    translate: 0;
+    padding: 0 0 0 40px;
   }
   .links {
     display: flex;
@@ -278,7 +280,7 @@ nav {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: var(--proj-gold);
+  background-color: var(--proj-sky-blue);
   transition: transform 0.25s ease-out;
 }
 
@@ -293,7 +295,7 @@ Submenu
   position: ab;
 }
 
-@media screen and (min-width: 1026px) {
+@media screen and (min-width: 1155px) {
   .submenu {
     display: block;
     position: fixed;
@@ -326,7 +328,7 @@ Submenu
     row-gap: 0.5rem;
   }
   .submenu-links a:hover {
-    color: var(--proj-gold);
+    color: var(--proj-sky-blue);
     transition: 0.3s ease-in-out;
   }
   .sublink-text {
@@ -339,11 +341,11 @@ Submenu
     gap: 1rem;
   }
   .sublink-text:hover {
-    color: var(--proj-gold);
+    color: var(--proj-sky-blue);
     transition: 0.3s ease-in-out;
   }
   .submenu-icon {
-    color: var(--proj-gold);
+    color: var(--proj-sky-blue);
     display: inline-block;
     margin-right: 0.5rem;
   }
@@ -351,5 +353,10 @@ Submenu
     display: flex;
     align-items: center;
     gap: 0.5rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .social-icons {
+    display: none;
   }
 }

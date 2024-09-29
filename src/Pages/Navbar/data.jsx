@@ -28,21 +28,16 @@ export const links = [
   },
   {
     id: 4,
-    url: "/rentals",
-    text: "rentals",
-  },
-  {
-    id: 5,
     url: "/prints",
     text: "prints",
   },
   {
-    id: 6,
+    id: 5,
     url: "/stock",
     text: "stock footage",
   },
   {
-    id: 7,
+    id: 6,
     url: "/contact",
     text: "contact",
   },
@@ -74,17 +69,23 @@ export const subLinks = [
   },
   {
     pageId: 200,
-    page: "Rentals",
+    page: "Services",
     links: [
       {
         id: 4,
-        label: "DJI Inspire 3",
+        label: "Underwater 8K Video",
         icon: <FaBriefcase />,
         url: "/products",
       },
       {
         id: 5,
-        label: "RED Komodo X",
+        label: "Underwater 45mp Photo",
+        icon: <FaBriefcase />,
+        url: "/products",
+      },
+      {
+        id: 6,
+        label: "Guided Dives",
         icon: <FaBriefcase />,
         url: "/products",
       },
@@ -95,13 +96,13 @@ export const subLinks = [
     page: "Prints",
     links: [
       {
-        id: 6,
+        id: 7,
         label: "Print Creation Process",
         icon: <FaBriefcase />,
         url: "/products",
       },
       {
-        id: 7,
+        id: 8,
         label: "Prints",
         icon: <FaBriefcase />,
         url: "/products",
@@ -110,16 +111,34 @@ export const subLinks = [
   },
   {
     pageId: 400,
+    page: "Stock Footage",
+    links: [
+      {
+        id: 9,
+        label: "Stock Video",
+        icon: <FaBriefcase />,
+        url: "/stock",
+      },
+      {
+        id: 10,
+        label: "Stock Photo",
+        icon: <FaBriefcase />,
+        url: "/stock",
+      },
+    ],
+  },
+  {
+    pageId: 500,
     page: "Contact",
     links: [
       {
-        id: 8,
+        id: 11,
         label: "Work with Me",
         icon: <FaBriefcase />,
         url: "/products",
       },
       {
-        id: 9,
+        id: 12,
         label: "1 on 1 Coaching",
         icon: <FaBriefcase />,
         url: "/products",
