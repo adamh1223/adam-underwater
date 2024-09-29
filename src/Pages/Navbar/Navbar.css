@@ -292,7 +292,6 @@ Submenu
 
 .submenu {
   display: none;
-  position: ab;
 }
 
 @media screen and (min-width: 1155px) {
